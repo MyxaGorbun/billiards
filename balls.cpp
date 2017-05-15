@@ -59,15 +59,6 @@ void makeCollision(Ball& b1, Ball& b2)
 	b2.addForce(force);
 }
 
-sf::Vector2f rotate(sf::Vector2f v, float angle)
-{
-	sf::Vector2f newV;
-	newV.x = v.x * cos(angle) - v.y * sin(angle);
-	newV.y = v.x * sin(angle) + v.y * cos(angle);
-
-	return newV;
-}
-
 void Ball::addForce(const sf::Vector2f& force)
 {
 	forces.push_back(force);
