@@ -26,4 +26,3 @@ private:
 
 
 float distance(const sf::Vector2f&, const sf::Vector2f&);
-sf::Vector2f rotate(sf::Vector2f v, float angle);
